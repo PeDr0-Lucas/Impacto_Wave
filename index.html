@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link rel="stylesheet" href="style.css">-->
+        <title>Bora para o Impacto?</title>
+    </head>
+    <body>
+
+        <main>
+            <h1>Bora para o impacto??</h1>
+            <div class="options">
+                <button id="yesButton" class="btn btn-primary">SIM</button>
+                <button id="notButton" class="btn btn-primary" style="position: relative; left: -13px; top: -0px;">NÃO</button>
+            </div>
+            <img class="image" src="./assets/image/wave.jpg" alt="">
+        </main>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,400;1,500&family=Poppins:wght@300;400&display=swap');
+
+                main {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100vw;
+                    height: 100vh;
+                    background-color: rgb(255, 206, 139);
+                }
+                .options {
+                    display: flex;
+                    gap: 32px;
+                }
+
+                #notButton{
+                    margin-left: 50px;
+                }
+
+                main h1{
+                    font-family: 'Open Sans', sans-serif;
+                    color: blue;
+                }
+
+                .btn-primary {
+                    background-color: rgb(36, 2, 175);
+                    border-color: rgb(69, 0, 134);
+                    color: white;
+                    border-radius: 10px;
+                    padding: 10px 25px;
+                    font-family: 'Poppins', sans-serif;;
+                }
+
+                .btn-primary:hover {
+                    background-color: rgb(38, 2, 71);
+                    border-color: rgb(38, 2, 71);
+                }
+
+                .image {
+                    margin-top: 52px;
+                    margin-bottom: 16px;
+                    width: 300px;
+                    height: 250px;
+                }
+
+                .donate {
+                    position: absolute;
+                    bottom: 10px;
+                    font-weight: 500;
+                }
+
+                @media screen and (max-width: 600px) {
+                    .image {
+                        width: 90%;
+                        height: auto;
+                    }
+
+                }
+        </style>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
